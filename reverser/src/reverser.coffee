@@ -20,7 +20,7 @@ class window.Reverser
 
   @convert: (char) ->
     char = char[0]
-    if char in @vowels
+    if char.toLowerCase() in @vowels
       char = char.toUpperCase()
     else
       char = char.toLowerCase()

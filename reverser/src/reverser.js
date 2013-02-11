@@ -31,8 +31,9 @@
     };
 
     Reverser.convert = function(char) {
+      var _ref;
       char = char[0];
-      if (__indexOf.call(this.vowels, char) >= 0) {
+      if (_ref = char.toLowerCase(), __indexOf.call(this.vowels, _ref) >= 0) {
         char = char.toUpperCase();
       } else {
         char = char.toLowerCase();
